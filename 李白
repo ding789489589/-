@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>李白-望天门山</title>
+	<style>
+		body{
+			margin:0px;
+			border:0px;
+			background-color: #52719c;
+		}
+		#wrapper{
+			font-family: serif;
+		}
+		#wrapper, .文章, .注释, .分析{
+			width: 60%;
+			margin: 0 auto;
+			box-shadow:4px 4px 6px #333333;
+			background-color: #fff;
+			display: flex;
+			border-radius: 15px;
+			margin-top: 20px;
+		}
+		#诗句{
+			color:#445566;
+		}
+		#warpper, .注释{
+			height: auto;
+		}
+		#诗句, #图片{	
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			text-align: center;
+			flex:1;
+		}
+		#诗句 >p{
+			letter-spacing: 0.5em;
+		}
+		#图片{
+			margin-top: 43px;
+		}
+		h4{
+			margin-top: 0px;
+		}
+		h1{
+			margin-right: 25px;
+			margin-top: 50px;
+			margin-bottom: 5px;
+		}
+		.文章 >div:nth-child(1) >a,
+		.注释 >div:nth-child(1) >a,
+		.分析 >div:nth-child(1) >a{
+			text-decoration:none;
+			font-size: 2em;
+			color:#1377e8;
+			border-bottom: 2px solid #eee;
+		}
+		.文章 >div:nth-child(1) >a,
+		.文章 >div:nth-child(1) >p,
+		.注释 >div:nth-child(1) >a,
+		.注释 >div:nth-child(1) >p,
+		.分析 >div:nth-child(1) >a{
+			margin-left: 15px;
+		}
+		.注释 >p{
+			white-space: pre-wrap;
+		}
+		.总结{
+			text-indent: 2em;
+			display: block;
+			margin-bottom: 0px;
+			margin-top: 10px;
+			padding-left: 13px;
+		}
+		#空心{
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			position: absolute;
+			top:40px;
+			left:330px;
+			background-color: #52719c;
+			box-shadow: inset 3px 3px 5px rgba(0,0,0,.5)
+		}
+		#姓名{
+			width: 80px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			color: #fff;
+			position: absolute;
+			top: 50px;
+			right: 210px;
+			background-color: #e44a4a;
+			border-top-right-radius: 25px;
+			border-bottom-left-radius: 25px;
+			position: fixed;
+			
+		}
+		#姓名 >p{
+			margin-bottom: 5px;
+			margin-top: 10px;
+			padding-left: 8px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="诗句">
+			<h1>望天门山</h1>
+			<h4>唐代：李白</h4>
+			<p><strong>天门中断楚江开，</strong></p>
+			<p><strong>碧水东流至此回。</strong></p>
+			<p><strong>两岸青山相对出，</strong></p>
+			<p><strong>孤帆一片日边来。</strong></p>
+		</div>
+			<div id="图片"><img src="../../../素材/李白.png" style="width: 400px; height: 260px; ">
+		</div>
+	</div>
+    <div class="文章">
+    	<div>
+    		<a href="">译文:</a>
+    		<p>长江犹如巨斧，劈开天门雄峰，碧绿江水滚滚东流到这里，又回旋向北流去。</p>
+    		<p>两岸青山互相对峙美景难分高下，一只小船从太阳升起的地方悠悠驶来。</p>
+    	</div>
+    </div>
+    <div class="注释">
+    	<div>
+    		<a href="">注释:</a>
+    		<p><strong>出<i></i>:</strong>突出，出现。</p>
+    		<p><strong>开:</strong>劈开，断开。</p>
+    		<p><strong>回:</strong>回漩，回转。指这一段江水由于地势险峻方向有所改变，并更加汹涌。</p>
+    		<p><strong>中断:</strong>江水从中间隔断两山。</p>
+    		<p><strong>至此:</strong>意为东流的江水在这转向北流。一作“直北”。</p>
+    		<p><strong>楚江:</strong>即长江。因为古代长江中游地带属楚国，所以叫楚江。</p>
+			<p><strong>天门山:</strong>位于安徽省和县与芜湖市长江两岸，在江北的叫西梁山，在江南的叫东梁山（古代又称博望山）。两</p>
+			<p style="margin-top: 0px;margin-bottom: 0px;display: block;margin-left: 68px;">山隔江对峙，形同天设的门户，天门由此得名。</p>
+			<p><strong>两岸青山:</strong>分别指东梁山和西梁山。</p>
+			
+		</div>
+    </div>
+	<div class="分析">
+		<div>
+			<a href="">全文分析：</a>
+			<p class="总结">这首诗写了碧水青山，白帆红日，交映成一幅色彩绚丽的画面。但这画面不是静止的，而是流动的。随着诗人行舟，山断江开，东流水回，青山相对迎出，孤帆日边驶来，景色由远及近再及远地展开。诗中用了六个动词“断、开、流、回、出、来”，山水景物呈现出跃跃欲出的动态，描绘了天门山一带的雄奇阔远。一、二句写出了天门山水雄奇险峻不可阻遏的气势，给人惊心动魄之感；三、四句写足也写活了浑阔茫远的水势。</p>
+
+　　			<p class="总结"><em><strong>“天门中断楚江开，碧水东流至此回。”</strong></em>这两句写诗人远眺天门山夹江对峙，江水穿过天门山，水势湍急、激荡回旋的壮丽景象。第一句紧扣题目，总写天门山，着重写出浩荡东流的楚江冲破天门山奔腾而去的壮阔气势。它给人以丰富的联想：天门两山本来是一个整体，阻挡着汹涌的江流。由于楚江怒涛的冲击，才撞开了“天门”，使它中断而成为东西两山。这和作者在《西岳云台歌送丹丘子》中所描绘的情景颇为相似：“巨灵（河神）咆哮擘两山（指河西的华山与河东的首阳山），洪波喷流射东海。”不过前者隐后者显而已。在作者笔下，楚江仿佛成了有巨大生命力的事物，显示出冲决一切阻碍的神奇力量，而天门山也似乎默默地为它让出了一条通道。
+</p>
+　　			<p class="总结">第二句写天门山下的江水，又反过来着重写夹江对峙的天门山对汹涌奔腾的楚江的约束力和反作用。由于两山夹峙，浩阔的长江流经两山间的狭窄通道时，激起回旋，形成波涛汹涌的奇观。如果说上一句是借山势写出水的汹涌，那么这一句则是借水势衬出山的奇险。有的本子“至此回”作“直北回”，解者以为指东流的长江在这一带回转向北。这也许称得上对长江流向的精细说明，但不是诗，更不能显现天门奇险的气势。可比较《西岳云台歌送丹丘子》：“西岳峥嵘何壮哉！黄河如丝天际来。黄河万里触山动，盘涡毂转秦地雷。”“盘涡毂转”也就是“碧水东流至此回”，同样是描绘万里江河受到峥嵘奇险的山峰阻遏时出现的情景，但作为一首七言古诗，写得淋漓尽致。从比较中就可以看出《望天门山》作为绝句的崇尚简省含蓄的特点。
+</p>
+<p class="总结"><em><strong>“两岸青山相对出，孤帆一片日边来。”</strong></em>这两句是一个不可分割的整体。第三句承前第一句写望中所见天门两山的雄姿；第四句承前第二句写长江江面的远景，点醒“望”的立脚点和表现诗人的淋漓兴会。诗人并不是站在岸上的某一个地方遥望天门山，他“望”的立脚点便是从“日边来”的“一片孤帆”。读这首诗的人大都赞赏“两岸青山相对出”的“出”字，因为它使本来静止不动的山带上了动态美，但却很少去考虑诗人何以有“相对出”的感受。如果是站在岸上某个固定的立脚点“望天门山”，那大概只会产生“两岸青山相对立”的静态感。反之，舟行江上，顺流而下，望着远处的天门两山扑进眼帘，显现出愈来愈清晰的身姿时，“两岸青山相对出”的感受就非常突出了。“出”字不但逼真地表现了在舟行过程中“望天门山”时天门山特有的姿态，而且寓含了舟中人的新鲜喜悦之感。夹江对峙的天门山，似乎正迎面向自己走来，表示它对江上来客的欢迎。青山既然对远客如此有情，则远客自当更加兴会淋漓。
+“孤帆一片日边来”，正传神地描绘出孤帆乘风破浪，越来越靠近天门山的情景，和诗人欣睹名山胜景、目接神驰的情状。由于末句在叙事中饱含诗人的激情，这首诗便在描绘出天门山雄伟景色的同时突出了诗人豪迈、奔放、自由洒脱、无拘无束的自我形象。</p>
+
+　　<p class="总结" style="margin-bottom: 10px;">这首诗意境开阔，气魄豪迈，音节和谐流畅，语言形象、生动，画面色彩鲜明。虽然只有短短的四句二十八个字，但它所构成的意境优美、壮阔，人们读了诗恍若置身其中。诗人将读者的视野沿着烟波浩渺的长江，引向无限宽广的天地里，使人顿时觉得心胸开阔、眼界扩大。从诗中可以看到诗人李白的豪放不羁的精神和不愿意把自己限在小天地里的广阔胸怀。
+李白（701年－762年），字太白，号青莲居士，唐朝浪漫主义诗人，被后人誉为“诗仙”。祖籍陇西成纪(待考)，出生于西域碎叶城，4岁再随父迁至剑南道绵州。李白存世诗文千余篇，有《李太白集》传世。762年病逝，享年61岁。其墓在今安徽当涂，四川江油、湖北安陆有纪念馆。</p>
+
+		</div>
+	</div>
+	<div id="空心"></div>
+	<div id="姓名">
+		<p>30</p>
+		<p>丁川</p>
+		<p>计科1705</p>
+	</div>
+</body>
+</html>
