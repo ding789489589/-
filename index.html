@@ -3,23 +3,52 @@
 <head>
 	<meta charset="UTF-8">
 	<title>李白-望天门山</title>
+	<link rel="stylesheet" href="CSS/font-awesome.min.css">
 	<style>
 		body{
 			margin:0px;
 			border:0px;
 			background-color: #52719c;
+			background-image: linear-gradient(to right top  ,#ee3f4d 50%,#e4dfd7 40%);
+			/*对角线线性渐变，实现颜色双拼*/
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			/*background-size: 100% calc(100% - 100vh + 5px);*/
+			position: relative;
+
 		}
-		#wrapper{
-			font-family: serif;
+		/*body::after{
+			content:'';
+			position: fixed;
+			top: 5px;
+			left:0;
+			bottom: 0;
+			right: 0;
+			background:#fff;
+			z-index: -1;
+		}*/
+		/*.indicator {
+		   	position: absolute;
+		   	top: 0; right: 0; left: 0; bottom: 0;
+		    background: -webkit-linear-gradient(bottom right, teal 50%, transparent 50%) no-repeat;
+		    background: -o-linear-gradient(bottom left, teal 50%, transparent 50%) no-repeat;
+		    background: linear-gradient(to top right, teal 50%, transparent 50%) no-repeat;
+		    background-size: 100% calc(100% - 100vh + 5px);
+		    z-index: 1;
+		    pointer-events: none;
+		    mix-blend-mode: darken;
 		}
-		@keyframes x{
-			from{
-				margin-top: 50%;
-			}
-			to{
-				margin-top: 20px;
-			}
-		}
+		.indicator::after {
+    		content: '';
+    		position: fixed;
+    		top: 5px; 
+    		bottom: 0; 
+    		right: 0; 
+    		left: 0;
+    		background: #fff;
+    		z-index: 1;
+        }   浏览进度条实现方法*/
+		
 		#wrapper, .文章, .注释, .分析{
 			width: 60%;
 			margin: 0 auto;
@@ -30,8 +59,24 @@
 			margin-top: 20px;
 			animation: x 3s ;
 		}
+		@keyframes x{
+			from{
+				margin-top: 50%;
+			}
+			to{
+				margin-top: 20px;
+			}
+		}
+		#wrapper{
+			font-family: serif;
+			
+		}
 		#诗句{
 			color:#445566;
+			
+		}
+		#图片{
+			margin-top: 43px;
 		}
 		#warpper, .注释{
 			height: auto;
@@ -42,13 +87,12 @@
 			flex-direction: column;
 			text-align: center;
 			flex:1;
+
 		}
 		#诗句 >p{
 			letter-spacing: 0.5em;
 		}
-		#图片{
-			margin-top: 43px;
-		}
+		
 		h4{
 			margin-top: 0px;
 		}
@@ -89,8 +133,9 @@
 			position: absolute;
 			top:40px;
 			left:330px;
-			background-color: #52719c;
-			box-shadow: inset 3px 3px 5px rgba(0,0,0,.5)
+			background-color: #e4dfd7;
+			box-shadow: inset 3px 3px 5px rgba(0,0,0,.5);
+
 		}
 		#姓名{
 			width: 80px;
@@ -106,6 +151,7 @@
 			border-bottom-left-radius: 25px;
 			position: fixed;
 			
+			
 		}
 		#姓名 >p{
 			margin-bottom: 5px;
@@ -115,6 +161,7 @@
 	</style>
 </head>
 <body>
+	<div class="indicator"></div>
 	<div id="wrapper">
 		<div id="诗句">
 			<h1>望天门山</h1>
@@ -124,7 +171,7 @@
 			<p><strong>两岸青山相对出，</strong></p>
 			<p><strong>孤帆一片日边来。</strong></p>
 		</div>
-			<div id="图片"><img src="https://baike.baidu.com/pic/%E6%9C%9B%E5%A4%A9%E9%97%A8%E5%B1%B1/2805036/0/6159252dd42a283490caae9c59b5c9ea15cebf3d?fr=lemma&ct=single#aid=0&pic=6159252dd42a283490caae9c59b5c9ea15cebf3d" style="width: 400px; height: 260px; ">
+			<div id="图片"><img src="https://pics6.baidu.com/feed/314e251f95cad1c89315f908f9a5a80cc83d5197.jpeg?token=7c9258e15d98aa6e89a50e1b4eda26d2" style="width: 400px; height: 260px; ">
 		</div>
 	</div>
     <div class="文章">
@@ -169,8 +216,10 @@
 	<div id="空心"></div>
 	<div id="姓名">
 		<p>30</p>
-		<p>丁川</p>
+		 <p>丁川</p><!--<i class="fa fa-address-card" aria-hidden="true"></i> -->
 		<p>计科1705</p>
+		
 	</div>
+
 </body>
 </html>
